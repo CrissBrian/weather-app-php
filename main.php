@@ -365,7 +365,7 @@
 					drawTable($daily); 
 				}
 			}else if (isset($_POST["clear"]) && $_POST["clear"]=="true"){ pass;
-			}else if ($city == "" || $street == "") {
+			}else if ($city == "" || $street == "" || $state =="") {
 				error_handle();
 			}else{
 				// get lat and lng by city, street and state.
